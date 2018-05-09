@@ -1,3 +1,5 @@
+/// <reference path="controllers/aquaController.js" />
+
 // Code goes here
 
 (function() {
@@ -5,10 +7,10 @@
           .config(function($routeProvider) {
                $routeProvider
                     .when("/", {
-                         templateUrl: "aquadashboard.html",
-                         controller: "aquaController"
+                         templateUrl: "views/aquadashboard.html",
+                         controller: "controllers/aquaController.js"
                     })
-                    .when("/settings",{templateUrl:"aquasettings.html",controller:"aquaController"});
+                    .when("/settings", { templateUrl: "views/aquasettings.html", controller: "controllers/aquaController.js" });
           })
 
      ;
