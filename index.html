@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <script data-require="jquery@1.9.1" data-semver="1.9.1" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+     <link data-require="bootstrap@3.3.7" data-semver="3.3.7" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+     <link data-require="bootswatch@3.3.5-flatly" data-semver="3.3.5-flatly" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/flatly/bootstrap.min.css" />
+     <script data-require="bootstrap@3.3.7" data-semver="3.3.7" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script data-require="angular.js@1.5.8" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular.js"></script>
+     <script data-require="angular-route@1.5.8" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular-route.js"></script>
+     <link rel="stylesheet" href="style.css" />
+     <script src="script.js"></script>
+     <script src="aquaController.js"></script>
+     <script src="onForTrue.js"></script>
+     <script src="statusPanel.js"></script>
+     <script src="settingsRow.js"></script>
+     
+</head>
+
+<body ng-app="myapp">
+     <nav class="navbar navbar-default">
+          <div class="container-fluid">
+               <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                         <span class="sr-only">Toggle navigation</span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Aquaminder</a>
+               </div>
+          </div>
+     </nav>
+
+     <div ng-view>
+
+     </div>
+</body>
+
+</html>

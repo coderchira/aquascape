@@ -1,0 +1,14 @@
+<div>
+     <div ng-class="{true:'panel panel-success',false:'panel panel-warning'}[panel.status]">
+          <div class="panel-heading">
+               <h3 class="panel-title">{{panel.header.title}} </h3>
+          </div>
+          <div class="panel-body">
+               <p>Status
+                    <button type="submit" ng-class="{true:'btn btn-sm btn-success glyphicon glyphicon-pause',false:'btn btn-sm btn-warning glyphicon glyphicon-play'}[panel.status]" 
+                    ng-click="panel.body.toggle()"> {{panel.status | onForTrue}}</button>
+               </p>
+               <p>Time {{panel.body.timestamp}}</p>
+          </div>
+     </div>
+</div>

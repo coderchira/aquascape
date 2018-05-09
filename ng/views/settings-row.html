@@ -1,0 +1,7 @@
+<tr>
+     <td>{{setting.timeslot}}</td>
+     <td><a ng-click="row.column.toggle('led')" ng-class="{true:'btn btn-sm btn-success',false:'btn btn-sm btn-default'}[setting.led]">{{setting.led | onForTrue}}</a></td>
+     <td><a ng-click="row.column.toggle('airpump')" ng-class="{true:'btn btn-sm btn-success',false:'btn btn-sm btn-default'}[setting.airpump]">{{setting.airpump | onForTrue}}</a></td>
+     <td><a ng-click="row.column.toggle('filter')" ng-class="{true:'btn btn-sm btn-success',false:'btn btn-sm btn-default'}[setting.filter]">{{setting.filter | onForTrue}}</a></td>
+     <td><a ng-click="row.column.toggle('feeder')" ng-class="{true:'btn btn-sm btn-success',false:'btn btn-sm btn-default'}[setting.feeder]">{{setting.feeder | onForTrue}}</a></td>
+</tr>

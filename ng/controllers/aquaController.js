@@ -1,0 +1,82 @@
+(function() {
+     angular.module("myapp").controller("aquaController", function($scope) {
+          $scope.params = [{
+               title: "Airpump",
+               status: "true",
+               timestamp: 1525263422801
+          }, {
+               title: "Filter",
+               status: "true",
+               timestamp: 1525263422801
+          }, {
+               title: "LED",
+               status: "false",
+               timestamp: 1525263422801
+          }, {
+               title: "feeder",
+               status: "false",
+               timestamp: 1525263422801
+          }];
+          $scope.settings = [{
+               timeslot: "06:00-11:59",
+               led: false,
+               airpump: true,
+               filter: false,
+               feeder: true
+          }, {
+               timeslot: "12:00-13:59",
+               led: true,
+               airpump: false,
+               filter: false,
+               feeder: false
+          }, {
+               timeslot: "14:00-14:59",
+               led: false,
+               airpump: true,
+               filter: false,
+               feeder: false
+          }, {
+               timeslot: "15:00-17:59",
+               led: false,
+               airpump: false,
+               filter: false,
+               feeder: false
+          }, {
+               timeslot: "18:00-18:59",
+               led: false,
+               airpump: false,
+               filter: false,
+               feeder: false
+          }, {
+               timeslot: "19:00-19:59",
+               led: false,
+               airpump: false,
+               filter: false,
+               feeder: false
+          }, {
+               timeslot: "20:00-21:59",
+               led: false,
+               airpump: false,
+               filter: false,
+               feeder: false
+          }, {
+               timeslot: "22:00-23:59",
+               led: false,
+               airpump: false,
+               filter: false,
+               feeder: false
+          }, {
+               timeslot: "00:00-03:59",
+               led: false,
+               airpump: false,
+               filter: false,
+               feeder: false
+          }, {
+               timeslot: "04:00-05:59",
+               led: false,
+               airpump: false,
+               filter: false,
+               feeder: false
+          }];
+     });
+})();
