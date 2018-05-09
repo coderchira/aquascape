@@ -1,19 +1,19 @@
 (function() {
-     angular.module("myapp").controller("aquaController", function($scope) {
+    var aquaController =  angular.module("myapp").controller("aquaController", function($scope) {
           $scope.params = [{
                title: "Airpump",
                status: "true",
                timestamp: 1525263422801
           }, {
                title: "Filter",
-               status: "true",
-               timestamp: 1525263422801
-          }, {
-               title: "LED",
                status: "false",
                timestamp: 1525263422801
           }, {
-               title: "feeder",
+               title: "LED",
+               status: "true",
+               timestamp: 1525263422801
+          }, {
+               title: "Feeder",
                status: "false",
                timestamp: 1525263422801
           }];

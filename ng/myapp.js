@@ -1,17 +1,16 @@
-/// <reference path="controllers/aquaController.js" />
 
 // Code goes here
 
-(function() {
-     angular.module("myapp", ["ngRoute"])
-          .config(function($routeProvider) {
-               $routeProvider
-                    .when("/", {
-                         templateUrl: "views/aquadashboard.html",
-                         controller: "controllers/aquaController.js"
-                    })
-                    .when("/settings", { templateUrl: "views/aquasettings.html", controller: "controllers/aquaController.js" });
-          })
+(function () {
+    var myapp = angular.module("myapp", ["ngRoute"])
+            .config(function ($routeProvider) {
+                $routeProvider
+                     .when("/", {
+                         templateUrl: "ng/views/aquadashboard.html",
+                         controller: "aquaController"
+                     })
+                     .when("/settings", { templateUrl: "ng/views/aquasettings.html", controller: "aquaController" });
+            })
 
-     ;
+    ;
 })();
